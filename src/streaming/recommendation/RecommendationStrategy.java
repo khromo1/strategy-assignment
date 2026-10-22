@@ -1,4 +1,7 @@
 package streaming.recommendation;
 
-public class RecommendationStrategy {
+import java.util.List;
+
+public interface RecommendationStrategy {
+    List<Track> recommend(List<Track> listeningHistory, List<Track> catalog, int limit);
 }
